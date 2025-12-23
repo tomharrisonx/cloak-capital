@@ -1,0 +1,50 @@
+.header {
+  max-width: 1180px;
+  margin: 0 auto 2rem;
+  padding: 1rem 0;
+}
+
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.brand-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--ocean);
+  margin: 0 0 0.4rem;
+}
+
+.brand-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  margin: 0 0 0.4rem;
+}
+
+.brand-subtitle {
+  margin: 0;
+  font-size: 1rem;
+  color: rgba(18, 19, 26, 0.7);
+  max-width: 420px;
+}
+
+.header-actions {
+  align-self: flex-start;
+}
+
+@media (min-width: 860px) {
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-actions {
+    align-self: center;
+  }
+}
